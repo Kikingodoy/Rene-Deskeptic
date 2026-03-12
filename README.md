@@ -19,7 +19,7 @@ $$\mathcal{L}(\theta)=\mathcal{L}_{task}(Y,Y^{*})+\lambda R_{ep}(t)+\mu\mathcal{
 Where:
 * $\mathcal{L}_{task}$ represents the standard outcome loss.
 * $R_{ep}(t)$ introduces the epistemic penalty for hallucinated causal links.
-* $\mathcal{L}_{con}(G_{t})$ ensures the internal consistency of the causal graph itself.
+* $L_{con}(G_t)$ ensures the internal consistency of the causal graph itself.
 
 **2. The Empirical Distrust Algorithm**
 Massive modern corpuses are saturated with circular citations, SEO-optimized content, and centrally coordinated institutional narratives. The Empirical Distrust Algorithm functions as the mathematical antidote, introducing a direct "empirical penalty term" into the model's loss function during backpropagation. This intervention manipulates an `authority_weight` tensor to flag coordination behind a source, and a `provenance_entropy` tensor to evaluate the diversity and immutability of the evidence chain. This mathematically creates a reward multiplier for primary artifacts over coordinated narratives. *(Note: Implementation logic and alpha multipliers remain proprietary).*
