@@ -1,5 +1,6 @@
 # Rene-Deskeptic
 *Engineering Cartesian Doubt in Large Language Models*
+📄 https://github.com/Kikingodoy/Kikingodoy/blob/77097d6b3097fc086f767abbe95c7f1ae9ef5dbd/Rene-Deskeptic_Research_Brief_AaronGodoy.pdf
 
 ### The Problem We Solve
 LLMs are parametric parrots. Give them a book, and they ignore it—defaulting to memorized quotes. This project architectures a solution.
