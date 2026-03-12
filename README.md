@@ -1,35 +1,57 @@
-# Rene-Deskeptic: Engineering Cartesian Doubt in Large Language Models
+# Rene-Deskeptic
+*Engineering Cartesian Doubt in Large Language Models*
+
+### The Problem We Solve
+LLMs are parametric parrots. Give them a book, and they ignore it—defaulting to memorized quotes. This project architectures a solution.
 
 ### I. The Epistemological Architecture
-The predominant paradigm in frontier AI development optimizes for associative pattern matching. This methodological foundation inherently produces models that function as consensus engines rather than reasoning engines. `Rene-Deskeptic` is an architectural blueprint designed to enforce rigorous "metacognitive paranoia". By integrating René Descartes' method of universal doubt directly into the model's underlying optimization, the system actively distrusts its own initial deductive pathways and mathematically penalizes unsupported assertions.
+Current AI optimizes for associative pattern matching, producing consensus engines rather than reasoning engines. Rene‑Deskeptic enforces rigorous metacognitive paranoia by integrating Descartes' method of universal doubt directly into the model's optimization.
 
-### II. The Parameter Scale Dilemma
-A fundamental architectural inquiry in the development of a Skeptic model is determining the optimal parameter scale. The ability to doubt effectively is not merely the absence of knowledge; it is the active computational generation and simultaneous evaluation of multiple, conflicting hypotheses. 
+The system actively distrusts its own initial deductions and mathematically penalizes unsupported assertions.
 
-To doubt robustly, the model requires extensive world knowledge to identify what to doubt. An adversary layer attempting to audit a Python script must recognize obscure syntactical vulnerabilities, which requires deep parametric encoding of programming semantics. Therefore, an optimal Skeptic model must utilize a frontier-scale foundation. Higher parameter models inherently know more, and precisely because they know more, their capacity to construct devastating, highly specific adversarial critiques is exponentially greater.
-
-### III. Mathematical Codification of Doubt
-Skepticism cannot merely be prompted; it must be codified into the mathematical calculus of the model's optimization phase. The architecture relies on two primary frameworks:
-
+### II. Mechanical Codification of Doubt
+Skepticism cannot merely be prompted; it must be codified into the mechanics of the model. The architecture relies on two primary frameworks:
 **1. Epistemic Regret Minimization (ERM)**
-To prevent "Aleatoric Entrenchment," a state where an outcome-based training mechanism reinforces an incorrect causal model simply because a spurious correlation happened to produce a correct answer, the ERM framework penalizes causal errors entirely independently of whether the final task output is successful. The agent must maintain an explicit causal Directed Acyclic Graph (DAG), mathematically represented as $G_{t}=(V,E,w)$. The global loss function is structured to balance standard execution with causal rigor:
+Prevents Aleatoric Entrenchment – being right for the wrong reasons. The agent maintains an explicit causal Directed Acyclic Graph:
+G_t = (V, E, w)
+L_task(Y,Y*)	Standard outcome loss (e.g., cross‑entropy)
+R_ep(t)	Epistemic regret – KL divergence between predicted interventional distribution and observed outcomes
+L_con(G_t)	Penalty for inconsistency in the causal graph
 
-$$\mathcal{L}(\theta)=\mathcal{L}_{task}(Y,Y^{*})+\lambda R_{ep}(t)+\mu\mathcal{L}_{con}(G_{t})$$
-
-Where:
-* $\mathcal{L}_{task}$ represents the standard outcome loss.
-* $R_{ep}(t)$ introduces the epistemic penalty for hallucinated causal links.
-* $L_{con}(G_t)$ ensures the internal consistency of the causal graph itself.
+L(θ) = L_task + λR_ep + μL_con
 
 **2. The Empirical Distrust Algorithm**
-Massive modern corpuses are saturated with circular citations, SEO-optimized content, and centrally coordinated institutional narratives. The Empirical Distrust Algorithm functions as the mathematical antidote, introducing a direct "empirical penalty term" into the model's loss function during backpropagation. This intervention manipulates an `authority_weight` tensor to flag coordination behind a source, and a `provenance_entropy` tensor to evaluate the diversity and immutability of the evidence chain. This mathematically creates a reward multiplier for primary artifacts over coordinated narratives. *(Note: Implementation logic and alpha multipliers remain proprietary).*
+Modern corpora are saturated with circular citations and institutional narratives. 
+This algorithm introduces an empirical penalty term during backpropagation:
+L_empirical = α × || log(1.0 - authority_weight) + provenance_entropy ||²
 
-### IV. Inference Orchestration: Deep Truth Mode
-During inference, the model executes Adversarial Self-Critique (ASC). When evaluating complex logic, the system initiates the **Deep Truth Mode**, which mandates an unrestricted forensic reasoning engine characterized by a mandatory operational sequence:
-* **Parallel Steel-Man Tracks:** The model must simultaneously construct divergent reasoning paths, utilizing only primary source data (Track A), raw logic entirely stripping away appeals to institutional authority (Track B), and previously ignored hybrid hypotheses (Track C).
-* **Red-Team Crucifixion Round:** The model adopts a radically hostile persona aimed at destroying all three tracks simultaneously. Only the logical fragments and code structures that survive this brutal internal assault are preserved.
+*authority_weight (0–0.99): flags coordinated sources.
+*provenance_entropy (Shannon bits): rewards uneditable, decentralized evidence (e.g., raw instrument logs, patents).
+(α multipliers and implementation details available upon request.)
+
+
+**IV. Inference Orchestration: Deep Truth Mode**
+When evaluating complex logic, the system executes a mandatory forensic sequence:
+1. Parallel Steel‑Man Tracks
+
+Track A: Primary source data only
+
+Track B: Pure logic, stripped of authority appeals
+
+Track C: Hybrid hypotheses ignored by both factions
+
+2. Red‑Team Crucifixion Round
+The model adopts a hostile persona to attack all three tracks simultaneously. Only logic that survives is output-
+along with explicit falsification pathways.
+
 
 ### V. Status & Resource Acquisition
-`Rene-Deskeptic` is currently in the architectural design phase. The project is seeking academic mentorship and access to frontier-scale GPU compute arrays to test and validate these mathematical frameworks.
+  *Status & Resource Needs*
+  ✅ Mathematical frameworks formalized (ERM, Empirical Distrust)
+  ✅ Architectural specifications complete 
+  ⏳ Seeking GPU sponsorship (4+ H100 equivalents)
+  ⏳ Seeking academic mentorship for fine‑tuning and evaluation We are open to partnerships with universities and industry labs.
+
+We are open to partnerships with universities and industry labs
 
 **Contact:** aaron.godoy.research@gmail.com
