@@ -6,9 +6,8 @@
 LLMs are parametric parrots. Give them a book, and they ignore it—defaulting to memorized quotes. This project architectures a solution.
 
 ### I. The Epistemological Architecture
-Current AI optimizes for associative pattern matching, producing consensus engines rather than reasoning engines. Rene‑Deskeptic enforces rigorous metacognitive paranoia by integrating Descartes' method of universal doubt directly into the model's optimization.
-
-The system actively distrusts its own initial deductions and mathematically penalizes unsupported assertions.
+Current AI models are optimized for pattern matching, producing agreement engines rather than reasoning engines. Rene‑Deskeptic enforces rigorous metacognitive paranoia by integrating Descartes' method of universal doubt directly into the model's optimization.
+Thus, actively distrusting its own initial deductions while mathematically penalizing unsupported assertions.
 
 ### II. Mechanical Codification of Doubt
 Skepticism cannot merely be prompted; it must be codified into the mechanics of the model. The architecture relies on two primary frameworks:
@@ -22,7 +21,7 @@ L_con(G_t)	Penalty for inconsistency in the causal graph
 L(θ) = L_task + λR_ep + μL_con
 
 **2. The Empirical Distrust Algorithm**
-Modern corpora are saturated with circular citations and institutional narratives. 
+Modern datasets are saturated with circular citations and institutional narratives. 
 This algorithm introduces an empirical penalty term during backpropagation:
 L_empirical = α × || log(1.0 - authority_weight) + provenance_entropy ||²
 
